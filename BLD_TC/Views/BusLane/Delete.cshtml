@@ -1,0 +1,53 @@
+﻿@model BLD_TC.Models.BusLaneEditModel
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>BusLaneEditModel</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.implementationDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.implementationDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.startTime)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.startTime)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.endTime)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.endTime)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.length)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.length)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Description)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Description)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

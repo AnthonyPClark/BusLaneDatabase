@@ -1,0 +1,50 @@
+﻿@model BLD_TC.Models.BusLaneEditModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>BusLaneEditModel</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.implementationDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.implementationDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.startTime)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.startTime)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.endTime)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.endTime)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.length)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.length)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Description)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Description)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
